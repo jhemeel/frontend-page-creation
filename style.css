@@ -24,6 +24,7 @@
 }
 .card{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -49,4 +50,19 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+ .card-wrapper{
+  width: 100%;
+ }
+  .card{
+    flex-direction: column-reverse;
+  }
+  .slackDisplayImage{
+    width: 120px;
+    height: 120px;
+    margin:30px auto;
+}
 }
