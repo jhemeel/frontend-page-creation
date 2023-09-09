@@ -16,7 +16,7 @@
 }
 
 .card-wrapper {
-    width: 70%;
+    width: 50%;
   padding: 2rem;
  background: linear-gradient(to right, rgb(248, 248, 248), rgb(210, 209, 209), rgb(159, 157, 157));
   box-shadow: 0 0  3px #e9b6fc,  0  0 3px #e4a8f9;
@@ -25,19 +25,12 @@
 .card{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-
-.card table td:first-child{
-    font-weight: 800;
-    padding-right: 30px;
-    text-align: right;
-    color: #5e0280;
-}
-
-.card table td:nth-child(2){
+.card table td:only-child{
     color: #8e43a9;
+    font-weight: 600;
 }
 
 .slackDisplayImage{
@@ -64,5 +57,10 @@
     width: 120px;
     height: 120px;
     margin:30px auto;
+}
+.card table td:only-child{
+  color: #8e43a9;
+  font-weight: 600;
+  text-align: center;
 }
 }
